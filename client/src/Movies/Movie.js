@@ -14,7 +14,6 @@ const Movie = (props) => {
         .get(`http://localhost:5000/api/movies/${id}`)
         .then(response => {
           setMovie(response.data);
-          console.log (movie)
         })
         .catch(error => {
           console.error(error);
@@ -26,6 +25,7 @@ const Movie = (props) => {
   const saveMovie = () => {
     const addToSavedList = props.addToSavedList;
     addToSavedList(movie)
+    console.log("savebutton", addToSavedList)
   }
 
   if (!movie) {
