@@ -70,3 +70,13 @@ body {
   padding: 5px 10px;
   background-color: lightskyblue;
 }
+
+a {
+  text-decoration: none;
+  color: rgb(49, 49, 61);
+}
+
+a.active {
+  color: rgb(0, 134, 139);
+  font-weight: bold;
+}
